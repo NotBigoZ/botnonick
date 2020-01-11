@@ -45,24 +45,6 @@ client.on('message', message => {
 });
 
 
-client.on('message', message => {
-    if (message.content === 'stanza') {
-message.guild.createChannel('new-channel', {
-	type: 'text',
-	permissionOverwrites: [
-		{
-			id: message.guild.id,
-			deny: ['VIEW_CHANNEL'],
-		},
-		{
-			id: message.author.id,
-			allow: ['VIEW_CHANNEL'],
-		},
-	],
-});
-
-    }});
-
 
 
 
