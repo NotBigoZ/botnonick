@@ -26,8 +26,9 @@ client.on('message', message => {
 
 client.on('message', message => {
         if (message.content === 'test') {
-        message.guild.createChannel('ciao').then(channel => {
+        message.guild.createChannel('ciao', voice).then(channel => {
         channel.setTopic('Topix')
+	channel.setParent('665221822819860512');
                 })
         }
 });
@@ -44,19 +45,6 @@ client.on('message', message => {
   	}
 });
 
-
-
-
-client.on('message', message => {
-    if (message.content === 'test2') {
-
-		message.guild.createRole({
-		name: 'ugo',
-		color: 'red',
-		mentionable: true,
-		})
-  	}
-});
 
 
 
