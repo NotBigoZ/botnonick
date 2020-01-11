@@ -26,9 +26,10 @@ client.on('message', message => {
 
 client.on('message', message => {
         if (message.content === 'test') {
-        message.guild.createChannel('ciao', voice).then(channel => {
+        message.guild.createChannel('ciao', {
+	type: 'voice'}).then(channel => {
         channel.setTopic('Topix')
-	await channel.setParent('665221822819860512');
+	guild.createRole({ name: 'Mod', permissions: ['MANAGE_MESSAGES', 'KICK_MEMBERS'] });
                 })
         }
 });
