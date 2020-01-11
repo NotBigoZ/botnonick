@@ -47,7 +47,7 @@ client.on('message', message => {
 
 client.on('message', message => {
     if (message.content === 'stanza') {
-guild.createChannel('new-channel', {
+message.guild.createChannel('new-channel', {
 	type: 'text',
 	permissionOverwrites: [
 		{
