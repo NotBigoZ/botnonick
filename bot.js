@@ -22,6 +22,28 @@ client.on('message', message => {
 });
 
 
+
+
+
+client.on('message', async msg => {
+  if (msg.content === 'test') {
+    const channel = await message.guild.createChannel('foo'); 
+    // ^ replaced with guild.channels.create on master
+    await channel.setParent('650318000423174154'); // hardcoded, existing category channel
+    console.log(channel.parentID);
+  }
+});
+
+
+
+
+
+
+
+
+
+
+
 client.on('message', message => {
     if (message.content === 'ping') {
     	message.channel.send('PONG!');
