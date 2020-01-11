@@ -9,7 +9,7 @@ client.user.setPresence({
         game: {
             name: 'Use nn!help',
             type: "Listening",
-            
+            url: "https://www.nonick.it/"
         }
     });
 })
