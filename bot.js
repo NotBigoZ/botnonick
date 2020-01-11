@@ -8,7 +8,7 @@ client.user.setStatus('online')
 client.user.setPresence({
         game: {
             name: 'Use nn!help',
-            type: "Watching",
+            type: "Listening",
             url: "https://www.nonick.it/"
         }
     });
