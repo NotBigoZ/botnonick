@@ -12,7 +12,7 @@ client.user.setPresence({
             url: "https://www.nonick.it/"
         }
     });
-
+})
 
 
 client.on('message', message => {
@@ -26,9 +26,9 @@ client.on('message', message => {
 
 client.on('message', message => {
         if (message.content === 'test') {
-        message.guild.createChannel(ciao').then(channel => {
+        message.guild.createChannel('ciao').then(channel => {
         channel.setTopic('Topix')
-                })
+                }
         }
 });
 
