@@ -1,10 +1,21 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 
-client.on('ready', () => {
-    console.log('I am ready!');
-    client.user.setActivity("TV", {type: "WATCHING"});
-});
+
+bot.on('ready', () =>{
+console.log('This bot is online!') //Tells you if the bot goes online using the log
+bot.user.setActivity(' ',{ //Put the text you want it to say as the activity here in the ' '
+type: 'WATCHING' //Sets activity. Uses "WATCHING" "STREAMING" "PLAYING
+}).catch(console.error); //Catches if an error happens
+
+})
+
+
+
+
+
+
+
 
 client.on('message', message => {
     if (message.content === 'ping') {
