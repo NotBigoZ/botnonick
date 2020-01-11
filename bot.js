@@ -15,6 +15,11 @@ client.user.setPresence({
 })
 
 
+client.on('message', message => {
+    if (message.content === 'nn!help') {
+    	message.channel.send('> ping \n >bing');
+  	}
+});
 
 
 client.on('message', message => {
