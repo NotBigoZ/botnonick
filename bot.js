@@ -4,6 +4,7 @@ const client = new Discord.Client();
 
 client.on('ready', () =>{
 console.log('This bot is online!') //Tells you if the bot goes online using the log
+client.user.setStatus('online')
 client.user.setPresence({
         game: {
             name: 'Use nn!help',
