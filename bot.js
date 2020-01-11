@@ -28,7 +28,7 @@ client.on('message', message => {
         if (message.content === 'test') {
         message.guild.createChannel('ciao').then(channel => {
         channel.setTopic('Topix')
-                }
+                })
         }
 });
 
