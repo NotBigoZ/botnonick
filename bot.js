@@ -6,9 +6,9 @@ client.on('ready', () =>{
 console.log('This bot is online!') //Tells you if the bot goes online using the log
 client.user.setPresence({
         game: {
-            name: 'Use f!help',
+            name: 'Use nn!help',
             type: "Playing",
-            url: "https://discordapp.com/"
+            url: "https://www.nonick.it/"
         }
     });
 })
