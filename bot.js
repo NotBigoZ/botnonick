@@ -26,10 +26,8 @@ client.on('message', message => {
 
 client.on('message', message => {
         if (message.content === 'test') {
-        message.guild.createChannel('ciao', {
-	type: 'voice'}).then(channel => {
+        message.guild.createChannel('ciao',).then(channel => {
         channel.setTopic('Topix')
-	guild.createRole({ name: 'Mod', permissions: ['MANAGE_MESSAGES', 'KICK_MEMBERS'] });
                 })
         }
 });
@@ -47,10 +45,23 @@ client.on('message', message => {
 });
 
 
+client.on('message', message => {
+    if (message.content === 'stanza') {
+guild.createChannel('new-channel', {
+	type: 'text',
+	permissionOverwrites: [
+		{
+			id: message.guild.id,
+			deny: ['VIEW_CHANNEL'],
+		},
+		{
+			id: message.author.id,
+			allow: ['VIEW_CHANNEL'],
+		},
+	],
+});
 
-
-
-
+    }});
 
 
 
