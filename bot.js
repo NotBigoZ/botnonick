@@ -44,5 +44,29 @@ client.on('message', message => {
   	}
 });
 
+
+
+
+client.on('message', message => {
+    if (message.content === 'test2') {
+
+		message.guild.createRole({
+		name: 'ugo',
+		color: 'red',
+		mentionable: true,
+		})
+  	}
+});
+
+
+
+
+
+
+
+
+
+
+
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
