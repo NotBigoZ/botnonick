@@ -12,7 +12,7 @@ client.user.setPresence({
             url: "https://www.nonick.it/"
         }
     });
-})
+
 
 
 client.on('message', message => {
