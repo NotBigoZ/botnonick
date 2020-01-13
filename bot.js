@@ -46,15 +46,8 @@ client.on('message', message => {
 
 
 
-client.updatePresence({
-  state: 'slithering',
-  details: '🐍',
-  startTimestamp: Date.now(),
-  endTimestamp: Date.now() + 1337,
-  largeImageKey: 'snek_large',
-  smallImageKey: 'snek_small',
-  instance: true,
-});
+const richPresence = require("easy-rich-presence");
+richPresence('388196273443831818',"This was made by","OOF#3764!","oofbig","OOF Bot!","oof","OOF#3764");
 
 
 
