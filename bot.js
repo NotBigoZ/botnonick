@@ -46,9 +46,6 @@ client.on('message', message => {
 
 
 
-
-const client = require('discord-rich-presence')('180984871685062656');
- 
 client.updatePresence({
   state: 'slithering',
   details: '🐍',
