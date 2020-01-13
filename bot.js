@@ -46,10 +46,6 @@ client.on('message', message => {
 
 
 
-const richPresence = require("easy-rich-presence");
-richPresence('388196273443831818',"This was made by","OOF#3764!","oofbig","OOF Bot!","oof","OOF#3764");
-
-
 
 
 
