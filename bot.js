@@ -22,7 +22,13 @@ client.on('message', message => {
 });
 
 
-
+client.on('message', message => {
+        if (message.content === 'test2') {
+        message.guild.createVoiceChannel('channelname',).then(channel => {
+        channel.setTopic('channeltopic')
+                })
+        }
+});
 
 client.on('message', message => {
         if (message.content === 'test') {
