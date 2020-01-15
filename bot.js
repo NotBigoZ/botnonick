@@ -8,7 +8,7 @@ game = discord.Game("658648498530549763")
 client.on('ready', () =>{
 console.log('This bot is online!') //Tells you if the bot goes online using the log
 //client.user.setStatus('online')
-client.change_presence(status=discord.Status.idle, activity=game)
+/*await*/ client.change_presence(status=discord.Status.online, activity=game)
 /*client.user.setPresence({
         game: {
             name: 'Use nn!help',
