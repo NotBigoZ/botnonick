@@ -1,6 +1,12 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 
+game = discord.Game("658648498530549763")
+await client.change_presence(status=discord.Status.idle, activity=game)
+
+
+
+
 
 client.on('ready', () =>{
 console.log('This bot is online!') //Tells you if the bot goes online using the log
