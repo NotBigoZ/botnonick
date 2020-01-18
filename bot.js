@@ -25,7 +25,7 @@ client.on('message', message => {
 
 client.on('message', message => {
     if (message.content === 'nn!commands') {
-    	message.channel.send('```**__<< Common Commands >>__** \n \n **nn!invite** - *Gives Discord Invite Link.* \n **nn!helpme** - *Need Help.* ```');
+    	message.channel.send('**__<< Common Commands >>__** \n \n **nn!invite** - *Gives Discord Invite Link.* \n **nn!helpme** - *Need Help.* ');
   	}
 });
 
