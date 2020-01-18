@@ -18,18 +18,25 @@ client.user.setPresence({
 
 client.on('message', message => {
     if (message.content === 'nn!help') {
-    	message.channel.send('> ping \n > bing');
+    	message.channel.send('No one will help you.');
   	}
 });
 
 
 client.on('message', message => {
-        if (message.content === 'test2') {
-        message.guild.createVoiceChannel('channelname',).then(channel => {
-        channel.setTopic('channeltopic')
-                })
-        }
+    if (message.content === 'nn!commands') {
+    	message.channel.send('```**__<< Common Commands >>__** \n \n **nn!invite** - *Gives Discord Invite Link.* \n **nn!helpme** - *Need Help.* ```');
+  	}
 });
+
+
+
+
+
+
+
+
+
 
 client.on('message', message => {
         if (message.content === 'test') {
