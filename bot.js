@@ -37,7 +37,7 @@ client.on('message', message => {
 
 client.on('message', message => {
     if (message.content === 'nn!helpme') {
-    	message.channel.send('If you need help enter in #⌛˙»˙•˙𝖠ssistenza or create a ticket on #🎫»˙•˙𝖢rea-𝖳icket');
+    	message.channel.send('If you need help enter in `#⌛˙»˙•˙𝖠ssistenza` or create a ticket on `#🎫»˙•˙𝖢rea-𝖳icket`');
   	}
 });
 
