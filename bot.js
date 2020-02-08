@@ -8,7 +8,7 @@ console.log('This bot is online!')
 client.user.setStatus("online");
 client.user.setPresence({
         game: {
-            name: 'Use nn!help',
+            name: 'Use nn!commands',
             type: "Listening",
             url: "http://www.nonick.it/"
         }
